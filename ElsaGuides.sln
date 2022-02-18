@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32203.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElsaGuides.ContentApproval.Web", "src\ElsaGuides.ContentApproval.Web\ElsaGuides.ContentApproval.Web.csproj", "{421379FB-A939-4033-9C13-479C6CD64879}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowGuide", "WorkflowGuide\WorkflowGuide.csproj", "{F41CB41A-3021-474B-A565-C4A83A1FA62A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{421379FB-A939-4033-9C13-479C6CD64879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{421379FB-A939-4033-9C13-479C6CD64879}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{421379FB-A939-4033-9C13-479C6CD64879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41CB41A-3021-474B-A565-C4A83A1FA62A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41CB41A-3021-474B-A565-C4A83A1FA62A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41CB41A-3021-474B-A565-C4A83A1FA62A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41CB41A-3021-474B-A565-C4A83A1FA62A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
