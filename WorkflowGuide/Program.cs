@@ -10,14 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 var connectionString = builder.Configuration.GetConnectionString("sqlServer");
 
-builder.Services.AddDbContextPool<WorkflowGuideDbContext>(options =>
+builder.Services.AddDbContext<WorkflowGuideDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
 });
 
 builder.Services.AddScoped<IPartNumberService, PartNumberService>();
 
-//builder.Services.AddElsa(config => config.UseEntityFrameworkPersistence<WorkflowGuideDbContext>(ef => ef.UseSqlServer(connectionString)));
+//builder.Services.AddElsa(config => config<WorkflowGuideDbContext>(ef => ef.UseSqlServer(connectionString)));
 
 var app = builder.Build();
 

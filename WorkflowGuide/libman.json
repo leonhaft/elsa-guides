@@ -19,13 +19,19 @@
       "destination": "wwwroot/lib/select2/",
       "files": [
         "css/select2.min.css",
-        "js/select2.min.js"
+        "js/select2.min.js",
+        "js/select2.full.min.js"
       ]
     },
     {
       "library": "select2-bootstrap-5-theme@1.2.0",
       "destination": "wwwroot/lib/select2/",
       "files": [ "select2-bootstrap-5-theme.min.css" ]
+    },
+    {
+      "library": "choices.js@10.1.0",
+      "destination": "wwwroot/lib/choices/",
+      "files": [ "choices.min.css", "choices.min.js" ]
     }
   ]
 }

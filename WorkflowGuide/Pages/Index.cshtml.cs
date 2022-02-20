@@ -6,15 +6,21 @@ namespace WorkflowGuide.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+        private IPartNumberService _partNumberService;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public List<Category> categories { get; set; }
+
+        public IndexModel(ILogger<IndexModel> logger, IPartNumberService partNumberService)
         {
             _logger = logger;
+            this._partNumberService = partNumberService;
         }
 
-        public void OnGet()
+        public async Task OnGetAsync()
         {
-
+            categories = await _partNumberService.CategoriesAsync();
         }
+
+        
     }
 }
