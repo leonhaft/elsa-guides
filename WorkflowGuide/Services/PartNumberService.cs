@@ -16,5 +16,12 @@ public class PartNumberService : IPartNumberService
 
         return categories;
     }
+
+    public async Task<PartNumberDto> StartPartNumberApplyAsync(PartNumberDto partNumberDto)
+    {
+        //throw new NotImplementedException();
+        var categories = await _dbContext.Categories.ToListAsync();
+        return partNumberDto;
+    }
 }
 

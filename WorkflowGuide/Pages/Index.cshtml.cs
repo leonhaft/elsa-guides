@@ -21,6 +21,9 @@ namespace WorkflowGuide.Pages
             categories = await _partNumberService.CategoriesAsync();
         }
 
-        
+        public async Task OnPostAsync()
+        {
+
+        }
     }
 }
